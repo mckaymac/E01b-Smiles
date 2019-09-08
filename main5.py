@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
 
+#imports libraries and assests
 import utils, open_color, arcade
 
+#checks the version of python
 utils.check_version((3,7))
 
+# sets the dimensions and title of the window containing the smiley face.
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Smiley Face Example"
 
+#creates Faces class
 class Faces(arcade.Window):
     """ Our custom Window Class"""
 
+    #initializes function to follow mouse cursor
     def __init__(self):
         """ Initializer """
         # Call the parent class initializer
